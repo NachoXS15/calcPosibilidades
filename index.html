@@ -4,15 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h2>Calculador de posiblidades</h2>
-    <form>
-        <input type="number" id="n">
-        <input type="number" id="r">
-        <input type="checkbox" id="order">
-        <input type="submit" value="Calcular">
-    </form>
-    <p>Cantidad de combinaciones posibles: <span id="result"></span></p>
+    <section>
+        <form>
+            <input type="number" placeholder="Cantidad de elementos" id="n">
+            <input type="number" placeholder="Cantidad de elementos por conjunto" id="r">
+            <div>
+                <label for="order">El orden importa</label>
+                <input type="checkbox" id="order">
+            </div>
+            <input type="submit" id="calcular" value="Calcular">
+        </form>
+    </section>
+    <p style="display: none;">Cantidad de combinaciones posibles: <span id="result"></span></p>
+    <script src="app.js"></script>
 </body>
 </html>
